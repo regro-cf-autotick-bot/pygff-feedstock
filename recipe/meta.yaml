@@ -1,6 +1,6 @@
 {% set name = "pygff" %}
-{% set version = "0.0.2" %}
-{% set sha256 = "39b92b4394b63df84287b14e4dd842e812a9acee0c5663910b0c8e083a90d301" %}
+{% set version = "1.0.0" %}
+{% set sha256 = "4e12721baf17220fdde11ef4c9bddd17b14435208c534382be9c264eaadc8aa4" %}
 
 package:
   name: {{ name }}
@@ -14,14 +14,14 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - python >=3
     - pip
     - setuptools
-    - numpy 
+    - numpy
     - pandas >0.23.*
   run:
     - python >=3
@@ -37,7 +37,7 @@ about:
   license: BSD
   license_family: BSD
   license_file: LICENSE
-  summary: 'GFF3 reader designed for educational use at the University of Michigan, Department of Computational Medicine & Bioinformatics'
+  summary: GFF3 reader designed for educational use at the University of Michigan, Department of Computational Medicine & Bioinformatics
 
 extra:
   recipe-maintainers:
