@@ -1,6 +1,6 @@
 {% set name = "pygff" %}
-{% set version = "0.0.2" %}
-{% set sha256 = "39b92b4394b63df84287b14e4dd842e812a9acee0c5663910b0c8e083a90d301" %}
+{% set version = "1.2.0" %}
+{% set sha256 = "9e0e4f73c8661f7128fbb277d311eb9a295776de5b6988820d2cec3326275569" %}
 
 package:
   name: {{ name }}
@@ -21,7 +21,7 @@ requirements:
     - python >=3
     - pip
     - setuptools
-    - numpy 
+    - numpy
     - pandas >0.23.*
   run:
     - python >=3
